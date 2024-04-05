@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const light = new THREE.HemisphereLight(0xffffff, 0xbbbbff, 1);
         scene.add(light);
 
-        const fly = await loadGLTF("./assets/models/fly/v2/scene.gltf");
+        const fly = await loadGLTF("./assets/models/fly/v3/scene.gltf");
         fly.scene.scale.set(1, 1, 1);
         fly.scene.position.set(0, 0, 0);
         fly.scene.rotation.set(0, 0, 180*Math.PI);
