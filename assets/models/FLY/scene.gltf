@@ -162,20 +162,20 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"vm_v4_067_fabric_diffuse",
-			"uri":"vm_v4_067_fabric_diffuse.png"
+			"name":"Fly-Bake",
+			"uri":"Fly-Bake.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"Wood 01",
-			"uri":"Wood%2001.png"
+			"name":"Wodd-Bake-Wood 01",
+			"uri":"Wodd-Bake-Wood%2001.png"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":10812,
+			"count":10352,
 			"max":[
 				0.45231693983078003,
 				0.07070640474557877,
@@ -191,13 +191,13 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":10812,
+			"count":10352,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":10812,
+			"count":10352,
 			"type":"VEC2"
 		},
 		{
@@ -209,7 +209,7 @@
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":20214,
+			"count":19536,
 			"max":[
 				0.21692384779453278,
 				0.21177193522453308,
@@ -225,13 +225,13 @@
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":20214,
+			"count":19536,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":20214,
+			"count":19536,
 			"type":"VEC2"
 		},
 		{
@@ -243,7 +243,7 @@
 		{
 			"bufferView":8,
 			"componentType":5126,
-			"count":3308,
+			"count":2260,
 			"max":[
 				0.5099999904632568,
 				0.6700000166893005,
@@ -259,13 +259,13 @@
 		{
 			"bufferView":9,
 			"componentType":5126,
-			"count":3308,
+			"count":2260,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":10,
 			"componentType":5126,
-			"count":3308,
+			"count":2260,
 			"type":"VEC2"
 		},
 		{
@@ -278,74 +278,74 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":129744,
+			"byteLength":124224,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":129744,
-			"byteOffset":129744,
+			"byteLength":124224,
+			"byteOffset":124224,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":86496,
-			"byteOffset":259488,
+			"byteLength":82816,
+			"byteOffset":248448,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":22104,
-			"byteOffset":345984,
+			"byteOffset":331264,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":242568,
-			"byteOffset":368088,
+			"byteLength":234432,
+			"byteOffset":353368,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":242568,
-			"byteOffset":610656,
+			"byteLength":234432,
+			"byteOffset":587800,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":161712,
-			"byteOffset":853224,
+			"byteLength":156288,
+			"byteOffset":822232,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":43872,
-			"byteOffset":1014936,
+			"byteOffset":978520,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":39696,
-			"byteOffset":1058808,
+			"byteLength":27120,
+			"byteOffset":1022392,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":39696,
-			"byteOffset":1098504,
+			"byteLength":27120,
+			"byteOffset":1049512,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":26464,
-			"byteOffset":1138200,
+			"byteLength":18080,
+			"byteOffset":1076632,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":10134,
-			"byteOffset":1164664,
+			"byteOffset":1094712,
 			"target":34963
 		}
 	],
@@ -357,8 +357,8 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1174800,
-			"uri":"fly.bin"
+			"byteLength":1104848,
+			"uri":"scene.bin"
 		}
 	]
 }
