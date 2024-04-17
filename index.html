@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,13 +11,114 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="navbar" data-hide-on-relar>
+    <div id="navbar">
         <img src="assets/image/logo.png" width="75">
     </div>
     <div id="main">
-        <a href="assets/models/FLY/FLY.usdz" rel="ar">
-            <img src="assets/icons/fly.jpg" width="350" height="350">
-        </a>
+        <div id="ios">
+            <a href="assets/models/ADA.usdz" rel="ar">
+                <img src="assets/icons/ADA.jpg" width="350px">
+            </a>
+        </div>
+        
+        <h2>ADA</h2>
+
+        <div class="slider">
+            <div class="slides">
+            <button class="slide selected" onclick="switchSrc(this, 'ADA')" style="background-image: url('assets/icons/ADA.jpg');">
+        
+            </button><button class="slide" onclick="switchSrc(this, 'AURA')" style="background-image: url('assets/icons/AURA.jpg');">
+        
+            </button><button class="slide" onclick="switchSrc(this, 'FLOW')" style="background-image: url('assets/icons/FLOW.jpg');">
+            
+            </button><button class="slide" onclick="switchSrc(this, 'FLY')" style="background-image: url('assets/icons/FLY.jpg');">
+            
+            </button><button class="slide" onclick="switchSrc(this, 'HOLY')" style="background-image: url('assets/icons/HOLY.jpg');">    
+            </button></div>
+        </div>
+          
+        <script type="module">
+        const quickLook = document.querySelector("#ios");
+        
+        window.switchSrc = (element, name) => {
+            const base = "assets/models/" + name;
+            quickLook.querySelector("a").href = base + '.usdz';
+            quickLook.querySelector("a").querySelector("img").src = "assets/icons/" + name + '.jpg'
+            
+            document.querySelector("h2").textContent = name;
+
+            const slides = document.querySelectorAll(".slide");
+            slides.forEach((element) => {element.classList.remove("selected");});
+            element.classList.add("selected");
+        };
+        
+        document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
+            // Keep slider interactions from affecting the XR scene.
+            ev.preventDefault();
+        });
+        </script>
+        
+        <style>
+        /* This keeps child nodes hidden while the element loads */
+        :not(:defined) > * {
+            display: none;
+        }
+            
+        
+        @keyframes circle {
+            from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
+            to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
+        }
+        
+        @keyframes elongate {
+            from { transform: translateX(100px); }
+            to   { transform: translateX(-100px); }
+        }
+        
+        .slider {
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            position: absolute;
+            bottom: 16px;
+        }
+        
+        .slides {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .slide {
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #fff;
+            margin-right: 10px;
+            border-radius: 10px;
+            border: none;
+            display: flex;
+        }
+        
+        .slide.selected {
+            border: 2px solid #4285f4;
+        }
+        
+        .slide:focus {
+            outline: none;
+        }
+        
+        .slide:focus-visible {
+            outline: 1px solid #4285f4;
+        }
+        
+        </style>
     </div>
 </body> 
 </html>

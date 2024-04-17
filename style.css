@@ -41,6 +41,17 @@ img {
     flex-direction: column;
 }
 
-.relar [data-hide-on-relar] {
-    display: none;
-  }
+h2 {
+    font-family: 'Josefin Sans';
+}
+
+a {
+    padding: 50px;
+}
+
+model-viewer {
+    background-color: #000000;
+    overflow-x: hidden;
+    width: 350px;
+    height: 350px;
+}
